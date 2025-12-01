@@ -22,22 +22,22 @@
     <tbody>
         <tr>
             <td>1</td>
-            <td>Арсен</td>
-            <td>arsen@example.com</td>
+            <td>Артур</td>
+            <td>artur@example.com</td>
             <td>Чоловіча</td>
             <td>01.02.2024</td>
         </tr>
         <tr>
             <td>2</td>
-            <td>Марія</td>
-            <td>maria@example.com</td>
+            <td>Lina</td>
+            <td>lina@example.com</td>
             <td>Жіноча</td>
             <td>15.01.2024</td>
         </tr>
         <tr>
             <td>3</td>
-            <td>Ігор</td>
-            <td>ihor@example.com</td>
+            <td>Валентин</td>
+            <td>valentin@example.com</td>
             <td>Чоловіча</td>
             <td>20.12.2023</td>
         </tr>
@@ -53,3 +53,4 @@
 
 </body>
 </html>
+
