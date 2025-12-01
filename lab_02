@@ -2,39 +2,83 @@
 <html lang="uk">
 <head>
 <meta charset="UTF-8">
-<title>Список фруктів</title>
+<title>Список фруктів від Загурського Артура Тарасовича</title>
 
 <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+    h1 {
+        color: #2E8B57;
+    }
+    .author-info {
+        background-color: #f0f8ff;
+        padding: 15px;
+        margin-bottom: 20px;
+        border-left: 4px solid #32CD32;
+    }
+    .author-name {
+        font-weight: bold;
+        color: #228B22;
+    }
     ul {
         background-color: #ADFF2F;
         padding: 20px;
-        width: 250px;
+        width: 300px;
         list-style: none;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
     li {
         background-color: #00FF00;
         margin: 10px 0;
-        padding: 10px;
+        padding: 12px;
+        border-radius: 5px;
+        transition: transform 0.2s;
+    }
+    li:hover {
+        transform: translateX(5px);
+        background-color: #7CFC00;
     }
     li span {
         background-color: #32CD32;
-        padding: 5px 10px;
+        padding: 8px 15px;
         display: inline-block;
+        border-radius: 3px;
+        font-weight: bold;
+    }
+    .footer {
+        margin-top: 20px;
+        font-style: italic;
+        color: #555;
     }
 </style>
 
 </head>
 <body>
 
-<h1>Фрукти</h1>
+<div class="author-info">
+    <h1>Список фруктів</h1>
+    <p><span class="author-name">Автор:</span> Загурський Артур Тарасович</p>
+    <p><span class="author-name">Дата створення:</span> 2024</p>
+    <p><span class="author-name">Призначення:</span> Демонстрація HTML та CSS навичок</p>
+</div>
+
+<h2>Мої улюблені фрукти:</h2>
 
 <ul>
-    <li><span>Яблуко</span></li>
-    <li><span>Банан</span></li>
-    <li><span>Апельсин</span></li>
-    <li><span>Ківі</span></li>
-    <li><span>Груша</span></li>
+    <li><span>Яблуко</span> - багате на вітаміни та клітковину</li>
+    <li><span>Банан</span> - джерело калію та енергії</li>
+    <li><span>Апельсин</span> - багатий на вітамін С</li>
+    <li><span>Ківі</span> - містить багато антиоксидантів</li>
+    <li><span>Груша</span> - корисна для травлення</li>
 </ul>
+
+<div class="footer">
+    <p>Список складено Загурським Артуром Тарасовичем як частину навчального проєкту з веб-розробки.</p>
+    <p>Усі фрукти рекомендовані для здорового способу життя.</p>
+</div>
 
 </body>
 </html>
