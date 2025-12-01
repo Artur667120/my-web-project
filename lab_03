@@ -2,55 +2,188 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>Таблиця — Лабораторна №3</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Таблиця студентів — Загурський Артур Тарасович</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f5f5f5;
+        }
+        
+        .header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            border-radius: 10px 10px 0 0;
+            margin-bottom: 0;
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        
+        .header h2 {
+            margin: 5px 0 0 0;
+            font-size: 18px;
+            font-weight: normal;
+            color: #ecf0f1;
+        }
+        
+        .author-info {
+            background-color: #e8f4fc;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 0 0 10px 10px;
+            overflow: hidden;
+        }
+        
+        .table th {
+            background-color: #3498db;
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: bold;
+        }
+        
+        .table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .table tbody tr {
+            background-color: white;
+            transition: background-color 0.3s;
+        }
+        
+        .table tbody tr:hover {
+            background-color: #f1f8ff;
+        }
+        
+        /* Особливе виділення рядка з Артуром */
+        .table tbody tr.highlight {
+            background-color: #e8f7f0;
+            border-left: 4px solid #27ae60;
+        }
+        
+        .table tbody tr.highlight td {
+            font-weight: bold;
+        }
+        
+        .table tbody tr.highlight td:first-child {
+            color: #27ae60;
+        }
+        
+        .table tbody tr.highlight td:nth-child(2) {
+            color: #2c3e50;
+        }
+        
+        .table tfoot {
+            background-color: #34495e;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .table tfoot td {
+            padding: 15px;
+            text-align: center;
+        }
+        
+        .footer {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #ecf0f1;
+            border-radius: 5px;
+            font-style: italic;
+            color: #555;
+        }
+        
+        .footer strong {
+            color: #2c3e50;
+        }
+    </style>
 </head>
 <body>
 
-<table class="table">
+<div class="header">
+    <h1>Таблиця студентів групи</h1>
+    <h2>Виконав: Загурський Артур Тарасович</h2>
+</div>
 
+<div class="author-info">
+    <p><strong>Автор:</strong> Загурський Артур Тарасович</p>
+    <p><strong>Дата створення:</strong> 2024</p>
+    <p><strong>Предмет:</strong> Веб-програмування</p>
+    <p><strong>Мета:</strong> Демонстрація навичок роботи з HTML таблицями</p>
+</div>
+
+<table class="table">
     <thead>
         <tr>
             <th>№</th>
             <th>Ім'я</th>
             <th>E-mail</th>
             <th>Стать</th>
-            <th>Дата</th>
+            <th>Дата реєстрації</th>
         </tr>
     </thead>
 
     <tbody>
-        <tr>
+        <tr class="highlight">
             <td>1</td>
-            <td>Артур</td>
-            <td>artur@example.com</td>
+            <td>Загурський Артур Тарасович</td>
+            <td>artur.zagursky@example.com</td>
             <td>Чоловіча</td>
             <td>01.02.2024</td>
         </tr>
         <tr>
             <td>2</td>
-            <td>Lina</td>
-            <td>lina@example.com</td>
+            <td>Ліна Петренко</td>
+            <td>lina.petrenko@example.com</td>
             <td>Жіноча</td>
             <td>15.01.2024</td>
         </tr>
         <tr>
             <td>3</td>
-            <td>Валентин</td>
-            <td>valentin@example.com</td>
+            <td>Валентин Шевченко</td>
+            <td>valentin.shevchenko@example.com</td>
             <td>Чоловіча</td>
             <td>20.12.2023</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Марія Коваленко</td>
+            <td>maria.kovalenko@example.com</td>
+            <td>Жіноча</td>
+            <td>10.01.2024</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Олексій Бондаренко</td>
+            <td>oleksiy.bondarenko@example.com</td>
+            <td>Чоловіча</td>
+            <td>05.02.2024</td>
         </tr>
     </tbody>
 
     <tfoot>
         <tr>
-            <td colspan="5">Всього: 3</td>
+            <td colspan="5">Всього студентів: 5 | Виконав: Загурський Артур Тарасович</td>
         </tr>
     </tfoot>
-
 </table>
+
+<div class="footer">
+    <p><strong>Примітка:</strong> Таблиця створена Загурським Артуром Тарасовичем для лабораторної роботи №3 з веб-програмування.</p>
+    <p>Перший рядок таблиці виділено, оскільки містить дані автора проєкту.</p>
+</div>
 
 </body>
 </html>
-
